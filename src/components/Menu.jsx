@@ -22,23 +22,34 @@ const Menu = () => {
                             </div>
                             <p>The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. </p>
 
-                        <a className='' href='#'>Order a Delivery <icon> <img src={scooter} alt="" srcset="" /></icon></a>
+                            <a className='' href='#'>Order a Delivery <icon> <img src={scooter} alt="" srcset="" /></icon></a>
 
                         </div>
                     </div>
                     <div className='menu-item'>
                         <img src={bruchetta} alt="Bruschetta" />
-                        <h3>Bruschetta</h3> <span>$8.99</span>
-                        <p>
-                            Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.
-                        </p>
+                        <div className="item-description">
+                            <div className="title-item">
+                                <h3 className='card-title'>Bruschetta</h3> <span className='price'>$8.99</span>
+                            </div>
+                            <p>
+                                Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.
+                            </p>
+                            <a className='' href='#'>Order a Delivery <icon> <img src={scooter} alt="" srcset="" /></icon></a>
+
+                        </div>
 
                     </div>
                     <div className='menu-item'>
                         <img src={lemon} alt="Lemon Dessert" />
-                        <h3>Limoncello Cake</h3> <span>$6.99</span>
-                        <p>This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p>
+                        <div className="item-description">
+                            <div className="title-item">
+                                <h3 className='card-title'>Lemon Dessert</h3> <span className='price'>$5.00</span>
+                            </div>
+                            <p>This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p>
+                                                                            <a className='' href='#'>Order a Delivery <icon> <img src={scooter} alt="" srcset="" /></icon></a>
 
+                        </div>
                     </div>
                 </div>
             </div>
