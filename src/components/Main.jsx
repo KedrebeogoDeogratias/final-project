@@ -1,8 +1,13 @@
 import React from 'react'
+import Hero from './Hero'
+import Menu from './Menu'
 
 const Main = () => {
   return (
-    <main>Main</main>
+    <main>
+      <Hero />
+      <Menu />
+    </main>
   )
 }
 

@@ -6,8 +6,10 @@ import logo from '../assets/Logo.svg' // Ensure the path is correct
 const Header = () => {
   return (
     <header>
+      <div className="wrapper">
         <img src={logo} alt="Logo" />
         <Nav />
+      </div>
     </header>
   )
 }

@@ -3,7 +3,8 @@ import logo from '../assets/Logo.svg' // Ensure the path is correct
 const Footer = () => {
   return (
     <footer>
-      <img src={logo} alt="Little Lemon Logo" />
+     <div className="footer-content">
+       <img src={logo} alt="Little Lemon Logo" />
       <div>
         <h3>Little Lemon</h3>
         <p>123 Flavor Street</p>
@@ -25,6 +26,7 @@ const Footer = () => {
           <a href="#">Twitter</a>
         </p>
       </div>
+     </div>
 
       <p>&copy; 2025 Little Lemon. All rights reserved.</p>
     </footer>

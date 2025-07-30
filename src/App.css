@@ -1,18 +1,165 @@
 /* Import des polices Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&family=Karla:wght@400;700;800&display=swap');
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  /* Utilise la couleur du texte par défaut */
+}
+
+html {
+  --secondary-color: #495E57;
+  /* Couleur primaire */
+  --primary-color: #F4CE14;
+  /* Couleur secondaire */
+  --bg-footer: #D9D9D9;
+  /* Couleur de fond du footer */
+}
+
 body {
   font-family: 'Karla', sans-serif;
   color: #000;
-  line-height: 1.5;
 }
 
 /* TITRES PRINCIPAUX */
 .display-title {
   font-family: 'Markazi Text', serif;
   font-size: 64pt;
-  font-weight: 500; /* Medium */
-  margin-bottom: 0.25em;
+  font-weight: 500;
+
+  /* Medium */
+
 }
 
 .sub-title {
@@ -26,7 +173,8 @@ body {
 .lead-text {
   font-family: 'Karla', sans-serif;
   font-size: 18pt;
-  font-weight: 500; /* Medium */
+  font-weight: 500;
+  /* Medium */
   line-height: 1.5;
 }
 
@@ -34,22 +182,24 @@ body {
 .section-title {
   font-family: 'Karla', sans-serif;
   font-size: 20pt;
-  font-weight: 800; /* Extra Bold */
+  font-weight: 800;
+  /* Extra Bold */
   text-transform: uppercase;
-  margin-top: 1em;
 }
 
 .section-special {
   font-family: 'Karla', sans-serif;
   font-size: 16pt;
-  font-weight: 800; /* Extra Bold */
+  font-weight: 800;
+  /* Extra Bold */
 }
 
 /* TITRES DE CARTES */
 .card-title {
   font-family: 'Karla', sans-serif;
   font-size: 18pt;
-  font-weight: 700; /* Bold */
+  font-weight: 700;
+  /* Bold */
 }
 
 /* TEXTE DE PARAGRAPHE */
@@ -58,13 +208,211 @@ body {
   font-size: 16pt;
   font-weight: 400;
   line-height: 1.5;
-  max-width: 65ch; /* 65 caractères max */
+  max-width: 65ch;
+  /* 65 caractères max */
 }
 
 /* TEXTE EN ÉVIDENCE (ex. prix) */
 .highlight-text {
   font-family: 'Karla', sans-serif;
   font-size: 16pt;
-  font-weight: 500; /* Medium */
-  color: #5a6b61; /* Couleur secondaire discrète (optionnelle) */
+  font-weight: 500;
+  /* Medium */
+  color: #5a6b61;
+  /* Couleur secondaire discrète (optionnelle) */
+}
+
+header {
+  padding: 1.8rem;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  /* Centrer le contenu */
+}
+
+
+
+header li {
+  list-style: none;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1.5em;
+  /* Espace entre les éléments du menu */
+  flex-wrap: wrap;
+}
+
+header nav ul a {
+  font-family: 'Karla', sans-serif;
+  font-size: 20pt;
+  font-weight: 500;
+  /* Medium */
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-footer);
+  /* Couleur de fond du footer */
+
+}
+
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: var(--secondary-color);
+  max-height: 350px;
+  padding: 1em;
+  /* Hauteur de la section hero */
+}
+
+.hero h1 {
+  color: var(--primary-color);
+}
+
+.hero h2 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1.2em;
+}
+
+.hero p {
+  color: white;
+  ;
+}
+
+.hero .hero-wrapper {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-between;
+
+
+}
+
+.hero .hero-wrapper .hero-text {
+  width: 50%;
+}
+
+.hero-image {
+  position: relative;
+  top: 23px;
+  width: 375px;
+  height: 440px;
+  /* transform: translateY(calc(15%)); */
+  border: 0px solid transparent;
+  /* Pour éviter les bordures */
+  border-radius: 10px;
+  /* Coins arrondis */
+  overflow: hidden;
+  /* Pour éviter que l'image dépasse */
+  z-index: 2;
+
+}
+
+.hero-image img {
+
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* Assure que l'image couvre toute la zone */
+}
+
+
+/* CSS */
+.btn {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  border: 0;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 16px 20px;
+  position: relative;
+  text-align: center;
+  margin-top: 1em;
+
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-menu {
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 6.2em;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-item {
+  width: 30%;
+  margin-bottom: 2em;
+  /* Espace entre les éléments du menu */
+
+  border-radius: 16px;
+  background-color: #EDEFEE;
+}
+
+.menu-item>img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+
+  /* Coins arrondis pour les images */
+}
+
+.item-description {
+  width: 80%;
+  margin: 0 auto;
+  /* Espace intérieur pour la description */
+}
+
+.title-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.7em 0;
+  
+}
+
+.price{
+  font-family: 'Karla', sans-serif;
+  color: #EE9972;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+.item-description p {
+  font-family: 'Karla', sans-serif;
+  font-size: 14pt;
+  font-weight: 400;
+  color: #495E57;
+  margin-bottom: 0.7em;
 }
